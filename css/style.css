@@ -885,7 +885,7 @@ ul.infomaco li a {
 .footer:after {
      position: absolute;
      content: "";
-     background: url(../images/footer_af.png);
+     /**background: url(../images/footer_af.png);**/
      width: 177px;
      height: 154px;
      background-repeat: no-repeat;
