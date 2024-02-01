@@ -1,13 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-   <head>
-      <!-- basic -->
-      <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <!-- mobile metas -->
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
-      <!-- site metas -->
+# Banco de dados fictício para armazenar usuários e senhas
+database = {'usuario1': 'senha123', 'usuario2': 'senha456'}
+
+def realizar_login():
+    # Solicitar nome de usuário e senha
+    usuario = input("Digite seu nome de usuário: ")
+    senha = input("Digite sua senha: ")
+
+    # Verificar se o usuário existe no banco de dados e se a senha está correta
+    if usuario in database and database[usuario] == senha:
+        print("Login bem-sucedido! Bem-vindo, {}.".format(usuario))
+    else:
+        print("Nome de usuário ou senha incorretos. Tente novamente.")
+
+# Exemplo de uso
+realizar_login()
+         
+      </div>
       <title>CEMAN</title>
       <meta name="keywords" content="">
       <meta name="description" content="">
